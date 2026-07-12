@@ -1,8 +1,4 @@
 
-//IT SHOULD HAVE TO BE INSIDE COMPONENTS FOLDER I CREATED IT IN PAGES BY MISTAKE
-
-
-
 
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
@@ -150,11 +146,11 @@ function Steps({setUserInput,userInput,setIsResumeAdded,setresumeID}) {
                     <TextField value={userInput.professionalData.linkedin} onChange={(e)=>setUserInput({...userInput,professionalData:{...userInput.professionalData,linkedin:e.target.value}})} id="linkedIn" label="LinkedIn Profile Link" variant="standard" />
                     <TextField value={userInput.professionalData.portfolio} onChange={(e)=>setUserInput({...userInput,professionalData:{...userInput.professionalData,portfolio:e.target.value}})} id="portfolio" label="Portfolio Profile Link" variant="standard" />
 
-                </div>
+                </div>j
             </div>
         )
          case 2 : return(
-            <div>
+            <div>ē
                 <h1>Educational Details</h1>
                 <div className="row p-3">
                     <TextField value={userInput.educationData.course} onChange={(e)=>setUserInput({...userInput,educationData:{...userInput.educationData,course:e.target.value}})} id="Course-Name" label="Course-Name" variant="standard" />

@@ -1,0 +1,62 @@
+API Handling in React
+
+-> Fetch
+-> Axios - Promise based http Request Handling
+             using-> axios(requestConfiguration)
+             requestConfiguration -> is an object with predefined keys (method,url,data,headers...)
+             Axios Method -> (GET,PUT,POST,DELETE)  : axios.get(url)
+
+
+
+Data sharing techniqus             
+
+1. State lifiting :to share data from anm component to another by lifting the data to their common
+
+
+
+
+jSON SERVER -REST API creation
+-----------------------------
+     1. Create a folder for json server 
+     2. Create json file to store data.
+     3.instal json server : npm i json-server.
+     4.To run json file (available in local host :3000) : npx json server json-filename.json
+
+
+
+Deploying JSON SEVER USING NODE
+-------------------------------
+1. instal stable version of json server : npm i json-server@0.17.4
+2. Create index.js file.
+3. inside index.js file 
+        - import json server
+        - create server using create method of the library json server
+        - import json file 
+        - create middleware using defaluts.
+        - Define port number to run app in local host .
+        - use middleware in server
+        - define routes for client request (api endpoint for srever)    
+        - run server for client request using listen  method.
+
+
+ Redux
+----------
+
+-> A js library for predictable and maintainable global state management.
+-> Redux consist of 2 library 
+   1. Redux toolkit - the official ,opinionated ,batteries-included toolset for efficient redux development .
+       
+               - to instal -npm install @reduxjs/toolkit
+               1. store - create a common storage -configureStore()
+               2. Actions -  they are similar to function ,to execute action it should be dispatch from component ,action output automatically return to reducers in redux.useCreateAction(), C reateAsyncThunk()
+               3. Reducers - used to update data in storage. use crateReducer()
+               slice- used to combine both actions and reducers ,use createSlice()
+
+
+   2. React Redux -  official React binding for redux 
+      to instal - npm instal react-redux
+      Hooks :
+
+           - useDispatch(action-name()) : hooks used to dispatch action from component.
+           - useSelector()  - used to select data from store.          
+
